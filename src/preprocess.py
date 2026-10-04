@@ -6,8 +6,13 @@ from sklearn.model_selection import train_test_split
 p = yaml.safe_load(open("params.yaml"))["preprocess"]
 d = np.load("data/raw/fashion.npz")
 
+<<<<<<< HEAD
 x_train = np.clip(d["x_train"] / 255.0, 0, 1).astype("float32")
 x_test = np.clip(d["x_test"] / 255.0, 0, 1).astype("float32")
+=======
+x_train = (d["x_train"] / 255.0 - 0.286) / 0.353
+x_test = (d["x_test"] / 255.0 - 0.286) / 0.353
+>>>>>>> teammate-sim
 
 x_tr, x_val, y_tr, y_val = train_test_split(
     x_train, d["y_train"], test_size=p["test_size"], random_state=p["seed"]
