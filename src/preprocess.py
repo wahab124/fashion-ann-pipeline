@@ -17,3 +17,5 @@ os.makedirs("data/processed", exist_ok=True)
 np.savez("data/processed/data.npz", x_train=x_tr, y_train=y_tr,
          x_val=x_val, y_val=y_val, x_test=x_test, y_test=d["y_test"])
 print("Saved processed data to data/processed/data.npz")
+
+# normalization: scale pixels to [0, 1]
