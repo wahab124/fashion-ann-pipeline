@@ -19,3 +19,5 @@ np.savez("data/processed/data.npz", x_train=x_tr, y_train=y_tr,
 print("Saved processed data to data/processed/data.npz")
 
 # normalization: scale pixels to [0, 1]
+
+# TODO: experiment with normalization
