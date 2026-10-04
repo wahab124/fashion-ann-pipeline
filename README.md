@@ -1,1 +1,1 @@
-# Fashion-MNIST ANN Pipeline
+# Fashion ANN Pipeline with DVC
